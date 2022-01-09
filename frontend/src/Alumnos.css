@@ -1,0 +1,256 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	transition: ease-in-out 0.2s;
+}
+
+body {
+    background-color: #F8F8F9;
+}
+
+.alumnos-container {
+    height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.alumnos-wrapper {
+	width: 100%;
+	padding: 40px 60px;
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+.alumnos-container h1 {
+	margin: 0px 0 0px 0;
+	color: #121625;
+	font-weight: 400;
+	font-size: 24px;
+	padding: 0 40px;
+}
+.alumnos-container h1 > span {
+	color: #32d5a4;
+	font-weight: 800;
+}
+
+.navbar {
+	height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+	padding: 0 40px;
+}
+.profile-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	z-index: 2;
+}
+
+#userSelect {
+	width: auto;
+	background-color: white;
+	margin-left: -20px;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
+    font-family: Raleway;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0.005em;
+	text-align: left;
+	cursor: pointer;
+}
+
+.addButton {
+    background: white;
+    color: black;
+    width: max-content;
+}
+.full-table {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+.table-container {
+	height: auto;
+	max-width: 100vw;
+	margin-top: 10px;
+	overflow: scroll;
+}
+
+#myInput {
+	margin: 0;
+}
+.table-controls {
+	display: flex;
+	align-items: center;
+	margin: 0px;
+	margin-top: 0;
+	margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.left-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alumnos-container h2 {
+	font-family: Raleway;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.table-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e6e6ea;
+	border-radius: 8px;
+	margin-left: 20px;
+	padding-left: 10px;
+}
+
+.tagGreen {
+	background-color: #32d5a4 !important;
+}
+.input-icon {
+	padding: 12px 12px;
+	background-color: #e6e6ea;
+	border-radius: 8px 0 0 8px;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0.005em;
+	text-align: left;
+	color: #515561;
+}
+.table-input > input {
+	padding: 12px 12px;
+	background-color: #e6e6ea;
+	border-radius: 8px;
+	border: none;
+	font-family: Raleway;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0.005em;
+	text-align: left;
+}
+
+.table-input-active {
+	border: 1px solid;
+	box-shadow: 0 0 2px #32d5a4;
+	border-radius: 8px;
+	border-color: #32d5a4 !important;
+	outline: none !important;
+}
+.table-input:focus,
+.table-input:active {
+	border: 1px solid;
+	box-shadow: 0 0 2px #32d5a4;
+	border-radius: 8px;
+	border-color: #32d5a4 !important;
+	outline: none !important;
+}
+
+.table-input > input:focus,
+.table-input > input:active {
+	border: none;
+	outline: none !important;
+}
+
+.table {
+	border-radius: 10px;
+	border-spacing: 0;
+	background-color: white;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+.alumnos-container th {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	padding: 19px 24px;
+	border-bottom: 1px solid lightgrey;
+	color: #a5a8b3;
+}
+
+.alumnos-container td {
+	width: 100%;
+	padding: 19px 24px;
+	padding-right: 30px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.email-column {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.alumnos-container tr:last-child > td {
+	border-bottom: none;
+}
+.tags {
+	display: flex;
+}
+
+.tag {
+	background-color: #32d4a4;
+	width: fit-content;
+	text-align: center;
+	padding: 4px 8px;
+	color: white;
+	font-weight: bold;
+	border-radius: 6px;
+	margin-right: 8px;
+}
+
+@media (max-width: 1000px) {
+	.full-table {
+		width: 100%;
+	}
+}
+@media (max-width: 536px) {
+	.table-input {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.table-input > input {
+		max-width: 100%;
+		text-overflow: ellipsis;
+		overflow: auto;
+	}
+}
